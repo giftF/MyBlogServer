@@ -1,2 +1,0 @@
-13:43:59.782 [main] INFO  org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:55) -Starting Main using Java 17 on MS-FKJHQAVSLGRF with PID 6816 (D:\javaobjects\MyBlog\target\classes started by Administrator in D:\javaobjects\MyBlog)
-13:43:59.793 [main] INFO  org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:634) -No active profile set, falling back to 1 default profile: "default"

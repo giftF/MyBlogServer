@@ -1,7 +1,0 @@
-10:23:14.585 [http-nio-8088-exec-2] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:55) -clientType = UNKNOWN
-10:23:14.585 [http-nio-8088-exec-2] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:57) -os = Unknown
-10:23:14.585 [http-nio-8088-exec-2] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:59) -browser = BOT
-10:23:14.585 [http-nio-8088-exec-2] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:63) -127.0.0.1 调用/customer/login接口，RequestBody:{username=gift, password=qf123456}
-10:23:14.680 [http-nio-8088-exec-2] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:91) -登录成功了
-10:23:14.796 [http-nio-8088-exec-4] INFO  org.gift.Servlet.PhotoAlbum.PhotoAlbumInterface.getlist(PhotoAlbumInterface.java:29) -127.0.0.1 调用/photoalbum/submit接口，RequestBody:{id=2, title=第二个相册, commit=第sab个相册的说明,这个相册被修改过了, top=1}
-10:23:14.800 [http-nio-8088-exec-4] INFO  org.gift.Servlet.PhotoAlbum.PhotoAlbumInterface.getlist(PhotoAlbumInterface.java:45) -修改相册成功

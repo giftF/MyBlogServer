@@ -1,8 +1,0 @@
-21:06:09.481 [http-nio-8088-exec-3] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:55) -clientType = UNKNOWN
-21:06:09.497 [http-nio-8088-exec-3] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:57) -os = Unknown
-21:06:09.497 [http-nio-8088-exec-3] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:59) -browser = BOT
-21:06:09.497 [http-nio-8088-exec-3] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:63) -127.0.0.1 调用/customer/login接口，RequestBody:{username=gift, password=qf123456}
-21:06:09.512 [http-nio-8088-exec-3] INFO  com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:110) -HikariPool-1 - Starting...
-21:06:09.512 [http-nio-8088-exec-3] WARN  com.zaxxer.hikari.util.DriverDataSource.<init>(DriverDataSource.java:70) -Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
-21:06:09.797 [http-nio-8088-exec-3] INFO  com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:123) -HikariPool-1 - Start completed.
-21:06:10.459 [http-nio-8088-exec-3] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:91) -登录成功了

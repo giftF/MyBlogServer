@@ -1,3 +1,0 @@
-19:10:00.450 [http-nio-8088-exec-1] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:91) -登录成功了
-19:10:00.675 [http-nio-8088-exec-2] INFO  org.gift.Servlet.PhotoAlbum.PhotoAlbumInterface.delete(PhotoAlbumInterface.java:61) -127.0.0.1 调用/photoalbum/delete接口，RequestBody:{id=2}
-19:10:00.675 [http-nio-8088-exec-2] ERROR org.gift.Servlet.PhotoAlbum.PhotoAlbumInterface.delete(PhotoAlbumInterface.java:78) -java.lang.ClassCastException: class java.lang.String cannot be cast to class java.lang.Integer (java.lang.String and java.lang.Integer are in module java.base of loader 'bootstrap')

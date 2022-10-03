@@ -1,9 +1,0 @@
-19:18:58.870 [main] INFO  org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:55) -Starting Main using Java 17 on MS-FKJHQAVSLGRF with PID 16572 (D:\javaobjects\MyBlog\target\classes started by Administrator in D:\javaobjects\MyBlog)
-19:18:58.881 [main] INFO  org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:634) -No active profile set, falling back to 1 default profile: "default"
-19:18:59.414 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate.multipleStoresDetected(RepositoryConfigurationDelegate.java:262) -Multiple Spring Data modules found, entering strict repository configuration mode
-19:18:59.416 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:132) -Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-19:18:59.435 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:201) -Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
-19:18:59.979 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:108) -Tomcat initialized with port(s): 8088 (http)
-19:18:59.988 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) -Initializing ProtocolHandler ["http-nio-8088"]
-19:18:59.988 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) -Starting service [Tomcat]
-19:18:59.989 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) -Starting Servlet engine: [Apache Tomcat/9.0.65]

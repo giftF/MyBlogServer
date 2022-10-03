@@ -1,7 +1,0 @@
-22:57:03.421 [http-nio-8088-exec-2] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:55) -clientType = UNKNOWN
-22:57:03.422 [http-nio-8088-exec-2] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:57) -os = Unknown
-22:57:03.422 [http-nio-8088-exec-2] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:59) -browser = BOT
-22:57:03.423 [http-nio-8088-exec-2] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:63) -127.0.0.1 调用/customer/login接口，RequestBody:{username=gift, password=qf123456}
-22:57:03.668 [http-nio-8088-exec-2] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:91) -登录成功了
-22:57:04.262 [http-nio-8088-exec-4] INFO  org.gift.Servlet.Message.MessageInterface.getlist(MessageInterface.java:80) -127.0.0.1 调用/message/list接口，RequestBody:{}
-22:57:41.521 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource.close(HikariDataSource.java:350) -HikariPool-1 - Shutdown initiated...
