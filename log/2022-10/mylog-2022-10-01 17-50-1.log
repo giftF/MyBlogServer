@@ -1,0 +1,10 @@
+17:50:12.466 [http-nio-8088-exec-4] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:42) -clientType = UNKNOWN
+17:50:12.466 [http-nio-8088-exec-4] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:44) -os = Unknown
+17:50:12.466 [http-nio-8088-exec-4] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:46) -browser = BOT
+17:50:12.466 [http-nio-8088-exec-4] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:50) -127.0.0.1 调用/customer/login接口，RequestBody:{username=gift, password=qf123456}
+17:50:12.554 [http-nio-8088-exec-4] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:77) -登录成功了
+17:50:42.435 [http-nio-8088-exec-6] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:42) -clientType = UNKNOWN
+17:50:42.435 [http-nio-8088-exec-6] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:44) -os = Unknown
+17:50:42.435 [http-nio-8088-exec-6] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:46) -browser = BOT
+17:50:42.435 [http-nio-8088-exec-6] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:50) -127.0.0.1 调用/customer/login接口，RequestBody:{username=gift, password=qf123456}
+17:50:42.553 [http-nio-8088-exec-6] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:77) -登录成功了

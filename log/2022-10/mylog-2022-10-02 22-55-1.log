@@ -1,0 +1,14 @@
+22:55:37.613 [main] INFO  org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:55) -Starting Main using Java 17 on MS-FKJHQAVSLGRF with PID 19044 (D:\javaobjects\MyBlog\target\classes started by Administrator in D:\javaobjects\MyBlog)
+22:55:37.625 [main] INFO  org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:634) -No active profile set, falling back to 1 default profile: "default"
+22:55:38.153 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate.multipleStoresDetected(RepositoryConfigurationDelegate.java:262) -Multiple Spring Data modules found, entering strict repository configuration mode
+22:55:38.155 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:132) -Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+22:55:38.174 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:201) -Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+22:55:38.713 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:108) -Tomcat initialized with port(s): 8088 (http)
+22:55:38.722 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) -Initializing ProtocolHandler ["http-nio-8088"]
+22:55:38.723 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) -Starting service [Tomcat]
+22:55:38.723 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) -Starting Servlet engine: [Apache Tomcat/9.0.65]
+22:55:38.807 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) -Initializing Spring embedded WebApplicationContext
+22:55:38.808 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:292) -Root WebApplicationContext: initialization completed in 1144 ms
+22:55:39.582 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) -Starting ProtocolHandler ["http-nio-8088"]
+22:55:39.598 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:220) -Tomcat started on port(s): 8088 (http) with context path ''
+22:55:39.606 [main] INFO  org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:61) -Started Main in 2.375 seconds (JVM running for 2.902)

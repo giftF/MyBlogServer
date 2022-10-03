@@ -1,0 +1,12 @@
+20:56:34.303 [http-nio-8088-exec-1] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) -Initializing Spring DispatcherServlet 'dispatcherServlet'
+20:56:34.303 [http-nio-8088-exec-1] INFO  org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:525) -Initializing Servlet 'dispatcherServlet'
+20:56:34.303 [http-nio-8088-exec-1] INFO  org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:547) -Completed initialization in 0 ms
+20:56:34.381 [http-nio-8088-exec-1] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:55) -clientType = UNKNOWN
+20:56:34.381 [http-nio-8088-exec-1] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:57) -os = Unknown
+20:56:34.381 [http-nio-8088-exec-1] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:59) -browser = BOT
+20:56:34.381 [http-nio-8088-exec-1] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:63) -127.0.0.1 调用/customer/login接口，RequestBody:{username=gift, password=qf123456}
+20:56:34.397 [http-nio-8088-exec-1] INFO  com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:110) -HikariPool-1 - Starting...
+20:56:34.397 [http-nio-8088-exec-1] WARN  com.zaxxer.hikari.util.DriverDataSource.<init>(DriverDataSource.java:70) -Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+20:56:34.792 [http-nio-8088-exec-1] INFO  com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:123) -HikariPool-1 - Start completed.
+20:56:35.384 [http-nio-8088-exec-1] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:91) -登录成功了
+20:56:35.491 [http-nio-8088-exec-2] INFO  org.gift.Servlet.PhotoAlbum.PhotoAlbumInterface.getlist(PhotoAlbumInterface.java:119) -127.0.0.1 调用/photoalbum/list接口，RequestBody:{}

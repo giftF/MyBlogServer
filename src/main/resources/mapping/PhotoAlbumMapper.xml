@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--namespace:命名空间，用来映射对应的mapper，相当于将mapper和mapper.xml连接起来-->
+<mapper namespace="org.gift.PersistantObject.mapper.PhotoAlbumMapper">
+    <insert id="add" parameterType="org.gift.PersistantObject.entity.PhotoAlbum">
+        insert into PhotoAlbum
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="title!=null">`title`,</if>
+            <if test="commit!=null">`commit`,</if>
+            <if test="top!=null">`top`,</if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="title!=null">#{title},</if>
+            <if test="commit!=null">#{commit},</if>
+            <if test="top!=null">#{top},</if>
+        </trim>
+    </insert>
+    <update id="update" parameterType="org.gift.PersistantObject.entity.PhotoAlbum">
+        update PhotoAlbum
+        <trim prefix="set" suffixOverrides=",">
+            <if test="title!=null">`title`=#{title},</if>
+            <if test="commit!=null">`commit`=#{commit},</if>
+            <if test="top!=null">`top`=#{top},</if>
+        </trim>
+        where `id`=#{id}
+    </update>
+    <update id="delete">
+        update PhotoAlbum set `status`=0 where `id`=#{id}
+    </update>
+    <update id="frontcover">
+        update PhotoAlbum set `front_cover` = #{photoid} where `id` = #{id}
+    </update>
+    <select id="getList" resultType="org.gift.ValueObject.PhotoAlbum.Catalogue">
+        SELECT t.id,t.title,t.views,d.url as `front_cover`,t.commit FROM PhotoAlbum AS t
+        left join Photo as d on t.front_cover=d.id
+        WHERE t.status=1
+        <trim prefix="order by" suffixOverrides=",">
+            <if test="top==1">t.top DESC,</if>
+            <if test="sort==0">t.createdate DESC,</if>
+            <if test="sort==1">t.views DESC, t.createdate DESC,</if>
+        </trim>
+        <trim prefix="LIMIT" suffixOverrides=",">
+            <if test="page!=null">#{page},</if>
+            <if test="rowcount!=null">#{rowcount},</if>
+        </trim>
+    </select>
+    <update id="setfrontcover">
+        update PhotoAlbum set `front_cover` = null where `front_cover` = #{id}
+    </update>
+</mapper>

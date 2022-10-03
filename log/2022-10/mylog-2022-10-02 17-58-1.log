@@ -1,0 +1,11 @@
+17:58:53.088 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource.close(HikariDataSource.java:350) -HikariPool-1 - Shutdown initiated...
+17:58:53.106 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource.close(HikariDataSource.java:352) -HikariPool-1 - Shutdown completed.
+17:58:58.858 [main] INFO  org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:55) -Starting Main using Java 17 on MS-FKJHQAVSLGRF with PID 17792 (D:\javaobjects\MyBlog\target\classes started by Administrator in D:\javaobjects\MyBlog)
+17:58:58.864 [main] INFO  org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:634) -No active profile set, falling back to 1 default profile: "default"
+17:58:59.380 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate.multipleStoresDetected(RepositoryConfigurationDelegate.java:262) -Multiple Spring Data modules found, entering strict repository configuration mode
+17:58:59.382 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:132) -Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+17:58:59.401 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:201) -Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+17:58:59.930 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:108) -Tomcat initialized with port(s): 8088 (http)
+17:58:59.938 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) -Initializing ProtocolHandler ["http-nio-8088"]
+17:58:59.939 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) -Starting service [Tomcat]
+17:58:59.939 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) -Starting Servlet engine: [Apache Tomcat/9.0.65]

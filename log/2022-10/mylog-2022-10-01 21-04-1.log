@@ -1,0 +1,11 @@
+21:04:58.714 [main] INFO  org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:55) -Starting Main using Java 17 on MS-FKJHQAVSLGRF with PID 12344 (D:\javaobjects\MyBlog\target\classes started by Administrator in D:\javaobjects\MyBlog)
+21:04:58.725 [main] INFO  org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:634) -No active profile set, falling back to 1 default profile: "default"
+21:04:59.231 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate.multipleStoresDetected(RepositoryConfigurationDelegate.java:262) -Multiple Spring Data modules found, entering strict repository configuration mode
+21:04:59.233 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:132) -Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+21:04:59.252 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:201) -Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+21:04:59.829 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:108) -Tomcat initialized with port(s): 8088 (http)
+21:04:59.839 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) -Initializing ProtocolHandler ["http-nio-8088"]
+21:04:59.839 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) -Starting service [Tomcat]
+21:04:59.840 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) -Starting Servlet engine: [Apache Tomcat/9.0.65]
+21:04:59.922 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) -Initializing Spring embedded WebApplicationContext
+21:04:59.923 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:292) -Root WebApplicationContext: initialization completed in 1160 ms

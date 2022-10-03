@@ -1,0 +1,9 @@
+14:08:20.763 [http-nio-8088-exec-1] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) -Initializing Spring DispatcherServlet 'dispatcherServlet'
+14:08:20.763 [http-nio-8088-exec-1] INFO  org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:525) -Initializing Servlet 'dispatcherServlet'
+14:08:20.763 [http-nio-8088-exec-1] INFO  org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:547) -Completed initialization in 0 ms
+14:08:20.775 [http-nio-8088-exec-1] INFO  org.gift.Servlet.Customer.LoginInterface.test(Login.java:26) -成功调用了写入数据的test接口，并用新方法写入了日志
+14:08:20.825 [http-nio-8088-exec-1] INFO  com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:110) -HikariPool-1 - Starting...
+14:08:20.825 [http-nio-8088-exec-1] WARN  com.zaxxer.hikari.util.DriverDataSource.<init>(DriverDataSource.java:70) -Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+14:08:21.104 [http-nio-8088-exec-1] INFO  com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:123) -HikariPool-1 - Start completed.
+14:08:31.622 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource.close(HikariDataSource.java:350) -HikariPool-1 - Shutdown initiated...
+14:08:31.644 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource.close(HikariDataSource.java:352) -HikariPool-1 - Shutdown completed.

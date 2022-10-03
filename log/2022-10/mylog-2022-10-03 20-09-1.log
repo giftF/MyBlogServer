@@ -1,0 +1,14 @@
+20:09:18.224 [http-nio-8088-exec-3] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:55) -clientType = UNKNOWN
+20:09:18.224 [http-nio-8088-exec-3] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:57) -os = Unknown
+20:09:18.224 [http-nio-8088-exec-3] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:59) -browser = BOT
+20:09:18.224 [http-nio-8088-exec-3] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:63) -127.0.0.1 调用/customer/login接口，RequestBody:{username=gift, password=qf123456}
+20:09:18.511 [http-nio-8088-exec-3] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:91) -登录成功了
+20:09:19.437 [http-nio-8088-exec-6] INFO  org.gift.Servlet.PhotoAlbum.PhotoAlbumInterface.frontcover(PhotoAlbumInterface.java:88) -127.0.0.1 调用/photoalbum/frontcover接口，RequestBody:{id=1, photoid=3}
+20:09:19.446 [http-nio-8088-exec-6] INFO  org.gift.Servlet.PhotoAlbum.PhotoAlbumInterface.frontcover(PhotoAlbumInterface.java:101) -要设置的照片不属于该相册
+20:09:23.756 [http-nio-8088-exec-8] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:55) -clientType = UNKNOWN
+20:09:23.756 [http-nio-8088-exec-8] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:57) -os = Unknown
+20:09:23.756 [http-nio-8088-exec-8] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:59) -browser = BOT
+20:09:23.756 [http-nio-8088-exec-8] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:63) -127.0.0.1 调用/customer/login接口，RequestBody:{username=gift, password=qf123456}
+20:09:24.229 [http-nio-8088-exec-8] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:91) -登录成功了
+20:09:24.715 [http-nio-8088-exec-10] INFO  org.gift.Servlet.PhotoAlbum.PhotoAlbumInterface.frontcover(PhotoAlbumInterface.java:88) -127.0.0.1 调用/photoalbum/frontcover接口，RequestBody:{id=2, photoid=3}
+20:09:25.606 [http-nio-8088-exec-10] INFO  org.gift.Servlet.PhotoAlbum.PhotoAlbumInterface.frontcover(PhotoAlbumInterface.java:97) -设置成功

@@ -1,0 +1,24 @@
+22:56:18.821 [http-nio-8088-exec-1] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) -Initializing Spring DispatcherServlet 'dispatcherServlet'
+22:56:18.823 [http-nio-8088-exec-1] INFO  org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:525) -Initializing Servlet 'dispatcherServlet'
+22:56:18.824 [http-nio-8088-exec-1] INFO  org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:547) -Completed initialization in 1 ms
+22:56:18.900 [http-nio-8088-exec-1] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:55) -clientType = UNKNOWN
+22:56:18.901 [http-nio-8088-exec-1] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:57) -os = Unknown
+22:56:18.902 [http-nio-8088-exec-1] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:59) -browser = BOT
+22:56:18.902 [http-nio-8088-exec-1] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:63) -127.0.0.1 调用/customer/login接口，RequestBody:{username=gift, password=qf123456}
+22:56:18.915 [http-nio-8088-exec-1] INFO  com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:110) -HikariPool-1 - Starting...
+22:56:18.919 [http-nio-8088-exec-1] WARN  com.zaxxer.hikari.util.DriverDataSource.<init>(DriverDataSource.java:70) -Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+22:56:19.190 [http-nio-8088-exec-1] INFO  com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:123) -HikariPool-1 - Start completed.
+22:56:20.032 [http-nio-8088-exec-1] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:91) -登录成功了
+22:56:20.277 [http-nio-8088-exec-2] INFO  org.gift.Servlet.Message.MessageInterface.getlist(MessageInterface.java:80) -127.0.0.1 调用/message/list接口，RequestBody:{rownum=1, page=2}
+22:56:37.644 [http-nio-8088-exec-4] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:55) -clientType = UNKNOWN
+22:56:37.644 [http-nio-8088-exec-4] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:57) -os = Unknown
+22:56:37.645 [http-nio-8088-exec-4] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:59) -browser = BOT
+22:56:37.645 [http-nio-8088-exec-4] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:63) -127.0.0.1 调用/customer/login接口，RequestBody:{username=gift, password=qf123456}
+22:56:37.881 [http-nio-8088-exec-4] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:91) -登录成功了
+22:56:38.113 [http-nio-8088-exec-6] INFO  org.gift.Servlet.Message.MessageInterface.getlist(MessageInterface.java:80) -127.0.0.1 调用/message/list接口，RequestBody:{rownum=1, page=1}
+22:56:47.374 [http-nio-8088-exec-9] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:55) -clientType = UNKNOWN
+22:56:47.374 [http-nio-8088-exec-9] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:57) -os = Unknown
+22:56:47.374 [http-nio-8088-exec-9] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:59) -browser = BOT
+22:56:47.375 [http-nio-8088-exec-9] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:63) -127.0.0.1 调用/customer/login接口，RequestBody:{username=gift, password=qf123456}
+22:56:47.613 [http-nio-8088-exec-9] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:91) -登录成功了
+22:56:48.067 [http-nio-8088-exec-10] INFO  org.gift.Servlet.Message.MessageInterface.getlist(MessageInterface.java:80) -127.0.0.1 调用/message/list接口，RequestBody:{rownum=2, page=1}

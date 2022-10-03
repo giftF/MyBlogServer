@@ -1,0 +1,14 @@
+21:07:05.067 [http-nio-8088-exec-4] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:55) -clientType = UNKNOWN
+21:07:05.067 [http-nio-8088-exec-4] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:57) -os = Unknown
+21:07:05.067 [http-nio-8088-exec-4] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:59) -browser = BOT
+21:07:05.067 [http-nio-8088-exec-4] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:63) -127.0.0.1 调用/customer/login接口，RequestBody:{username=gift, password=qf123456}
+21:07:05.392 [http-nio-8088-exec-4] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:91) -登录成功了
+21:07:05.772 [http-nio-8088-exec-6] INFO  org.gift.Servlet.PhotoAlbum.PhotoAlbumInterface.getlist(PhotoAlbumInterface.java:119) -127.0.0.1 调用/photoalbum/list接口，RequestBody:{top=1, rownum=2, page=1}
+21:07:34.508 [http-nio-8088-exec-9] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:55) -clientType = UNKNOWN
+21:07:34.509 [http-nio-8088-exec-9] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:57) -os = Unknown
+21:07:34.509 [http-nio-8088-exec-9] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:59) -browser = BOT
+21:07:34.509 [http-nio-8088-exec-9] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:63) -127.0.0.1 调用/customer/login接口，RequestBody:{username=gift, password=qf123456}
+21:07:34.995 [http-nio-8088-exec-9] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:91) -登录成功了
+21:07:35.550 [http-nio-8088-exec-10] INFO  org.gift.Servlet.PhotoAlbum.PhotoAlbumInterface.getlist(PhotoAlbumInterface.java:119) -127.0.0.1 调用/photoalbum/list接口，RequestBody:{top=1, rowcount=2, page=2}
+21:07:45.418 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource.close(HikariDataSource.java:350) -HikariPool-1 - Shutdown initiated...
+21:07:45.443 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource.close(HikariDataSource.java:352) -HikariPool-1 - Shutdown completed.

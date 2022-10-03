@@ -1,0 +1,9 @@
+19:16:26.381 [http-nio-8088-exec-4] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:55) -clientType = UNKNOWN
+19:16:26.396 [http-nio-8088-exec-4] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:57) -os = Unknown
+19:16:26.396 [http-nio-8088-exec-4] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:59) -browser = BOT
+19:16:26.396 [http-nio-8088-exec-4] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:63) -127.0.0.1 调用/customer/login接口，RequestBody:{username=gift, password=qf123456}
+19:16:26.457 [http-nio-8088-exec-4] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:91) -登录成功了
+19:16:26.506 [http-nio-8088-exec-6] INFO  org.gift.Servlet.PhotoAlbum.PhotoAlbumInterface.delete(PhotoAlbumInterface.java:61) -127.0.0.1 调用/photoalbum/delete接口，RequestBody:{}
+19:16:26.506 [http-nio-8088-exec-6] ERROR org.gift.Servlet.PhotoAlbum.PhotoAlbumInterface.delete(PhotoAlbumInterface.java:72) -java.lang.NumberFormatException: Cannot parse null string
+19:16:44.506 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource.close(HikariDataSource.java:350) -HikariPool-1 - Shutdown initiated...
+19:16:44.530 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource.close(HikariDataSource.java:352) -HikariPool-1 - Shutdown completed.

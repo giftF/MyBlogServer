@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--namespace:命名空间，用来映射对应的mapper，相当于将mapper和mapper.xml连接起来-->
+<mapper namespace="org.gift.PersistantObject.mapper.DeployMapper">
+    <select id="selectByClassify" resultType="org.gift.PersistantObject.entity.Deploy">
+        SELECT t.id,t.classify,t.key,t.value,t.commit FROM Deploy AS t WHERE t.classify = #{classify}
+    </select>
+    <select id="selectByIDorKey" resultType="org.gift.PersistantObject.entity.Deploy" parameterType="org.gift.PersistantObject.entity.Deploy">
+        select t.id,t.classify,t.key,t.value,t.commit from Deploy as t
+        <trim prefix="where" suffixOverrides="and">
+            <if test="id!=null">t.id=#{id} and</if>
+            <if test="classify!=null">t.classify=#{classify} and</if>
+            <if test="key!=null">t.key=#{key} and</if>
+        </trim>
+    </select>
+</mapper>

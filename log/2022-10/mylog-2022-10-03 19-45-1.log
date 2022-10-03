@@ -1,0 +1,13 @@
+19:45:16.519 [http-nio-8088-exec-9] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:55) -clientType = UNKNOWN
+19:45:16.519 [http-nio-8088-exec-9] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:57) -os = Unknown
+19:45:16.519 [http-nio-8088-exec-9] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:59) -browser = BOT
+19:45:16.519 [http-nio-8088-exec-9] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:63) -127.0.0.1 调用/customer/login接口，RequestBody:{username=gift, password=qf123456}
+19:45:16.870 [http-nio-8088-exec-9] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:91) -登录成功了
+19:45:17.213 [http-nio-8088-exec-5] INFO  org.gift.Servlet.Photo.PhotoInterface.delete(PhotoInterface.java:79) -127.0.0.1 调用/photo/delete接口，RequestBody:{id=1}
+19:45:17.410 [http-nio-8088-exec-5] ERROR org.gift.Servlet.Photo.PhotoInterface.delete(PhotoInterface.java:92) -java.lang.ClassCastException: class java.lang.Integer cannot be cast to class java.lang.String (java.lang.Integer and java.lang.String are in module java.base of loader 'bootstrap')
+19:45:54.539 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource.close(HikariDataSource.java:350) -HikariPool-1 - Shutdown initiated...
+19:45:54.553 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource.close(HikariDataSource.java:352) -HikariPool-1 - Shutdown completed.
+19:45:59.433 [main] INFO  org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:55) -Starting Main using Java 17 on MS-FKJHQAVSLGRF with PID 18516 (D:\javaobjects\MyBlog\target\classes started by Administrator in D:\javaobjects\MyBlog)
+19:45:59.441 [main] INFO  org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:634) -No active profile set, falling back to 1 default profile: "default"
+19:45:59.979 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate.multipleStoresDetected(RepositoryConfigurationDelegate.java:262) -Multiple Spring Data modules found, entering strict repository configuration mode
+19:45:59.981 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:132) -Bootstrapping Spring Data Redis repositories in DEFAULT mode.

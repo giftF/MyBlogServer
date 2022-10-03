@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--namespace:命名空间，用来映射对应的mapper，相当于将mapper和mapper.xml连接起来-->
+<mapper namespace="org.gift.PersistantObject.mapper.BlogsMapper">
+    <insert id="add" parameterType="org.gift.PersistantObject.entity.Blogs">
+        insert into Blogs
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="title!=null">title,</if>
+            <if test="top!=null">top,</if>
+            <if test="classify!=null">classify,</if>
+            <if test="keyword!=null">keyword,</if>
+            <if test="value!=null">value,</if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="title!=null">#{title},</if>
+            <if test="top!=null">#{top},</if>
+            <if test="classify!=null">#{classify},</if>
+            <if test="keyword!=null">#{keyword},</if>
+            <if test="value!=null">#{value},</if>
+        </trim>
+    </insert>
+    <update id="update" parameterType="org.gift.PersistantObject.entity.Blogs">
+        update Blogs
+        <trim prefix="set" suffixOverrides=",">
+            <if test="title!=null">title=#{title},</if>
+            <if test="top!=null">top=#{top},</if>
+            <if test="status!=null">status=#{status},</if>
+            <if test="classify!=null">classify=#{classify},</if>
+            <if test="keyword!=null">keyword=#{keyword},</if>
+            <if test="value!=null">value=#{value},</if>
+        </trim>
+        where
+            id=#{id}
+    </update>
+    <select id="content" resultType="org.gift.ValueObject.Blog.ResContent" parameterType="org.gift.PersistantObject.entity.Blogs">
+        select id,title,top,classify,keyword,value,views,updatedate,createdate from Blogs where id=#{id}
+    </select>
+    <select id="getList" resultType="org.gift.ValueObject.Blog.Catalogue">
+        SELECT t.id,t.title,t.views,t.createdate FROM Blogs AS t
+        WHERE t.status=1
+        <trim prefix="order by" suffixOverrides=",">
+            <if test="top==1">t.top DESC,</if>
+            <if test="sort==0">t.createdate DESC,</if>
+            <if test="sort==1">t.views DESC, t.createdate DESC,</if>
+        </trim>
+        <trim prefix="LIMIT" suffixOverrides=",">
+            <if test="page!=null">#{page},</if>
+            <if test="rowcount!=null">#{rowcount},</if>
+        </trim>
+    </select>
+</mapper>

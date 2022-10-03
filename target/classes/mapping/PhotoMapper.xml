@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--namespace:命名空间，用来映射对应的mapper，相当于将mapper和mapper.xml连接起来-->
+<mapper namespace="org.gift.PersistantObject.mapper.PhotoMapper">
+    <insert id="add" parameterType="org.gift.PersistantObject.entity.Photo">
+        insert into Photo
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="PhotoAlbum_id!=null">`PhotoAlbum_id`,</if>
+            <if test="url!=null">`url`,</if>
+            <if test="title!=null">`title`,</if>
+            <if test="commit!=null">`commit`,</if>
+            <if test="index!=null">`index`,</if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="PhotoAlbum_id!=null">#{PhotoAlbum_id},</if>
+            <if test="url!=null">#{url},</if>
+            <if test="title!=null">#{title},</if>
+            <if test="commit!=null">#{commit},</if>
+            <if test="index!=null">#{index},</if>
+        </trim>
+    </insert>
+    <update id="update" parameterType="org.gift.PersistantObject.entity.Photo">
+        update Photo
+        <trim prefix="set" suffixOverrides=",">
+            <if test="title!=null">`title`=#{title},</if>
+            <if test="commit!=null">`commit`=#{commit},</if>
+            <if test="index!=null">`index`=#{index},</if>
+        </trim>
+        where `id`=#{id}
+    </update>
+    <update id="delete">
+        update Photo set `status`=0 where `id`=#{id}
+    </update>
+    <update id="sort">
+        update Photo set `index` = `index` + #{tp} where `photoalbum_id` = #{photoalbum_id} and `index` >= #{index} and `status`=1
+    </update>
+    <select id="selectByID" resultType="org.gift.PersistantObject.entity.Photo">
+        select `id`,`PhotoAlbum_id`,`index` from Photo where `id`=#{id}
+    </select>
+</mapper>

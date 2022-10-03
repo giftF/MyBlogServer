@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--namespace:命名空间，用来映射对应的mapper，相当于将mapper和mapper.xml连接起来-->
+<mapper namespace="org.gift.PersistantObject.mapper.LoginRecordMapper">
+    <insert id="save" parameterType="org.gift.PersistantObject.entity.LoginRecord">
+        insert into LoginRecord
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="ip!=null">ip,</if>
+            <if test="value!=null">value,</if>
+            <if test="status!=null">status,</if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="ip!=null">#{ip},</if>
+            <if test="value!=null">#{value},</if>
+            <if test="status!=null">#{status},</if>
+        </trim>
+    </insert>
+
+    <select id="SelectCount" resultType="java.lang.Integer">
+        SELECT
+            SUM(t.status)
+        FROM
+        (SELECT
+            STATUS
+        FROM
+            LoginRecord
+        WHERE
+            IP = #{ip}
+            AND createdate >= DATE_ADD(NOW(), INTERVAL -24 HOUR)
+        ORDER BY id DESC
+        LIMIT 5) AS t
+    </select>
+</mapper>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,13 @@
+19:43:01.740 [http-nio-8088-exec-6] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:55) -clientType = UNKNOWN
+19:43:01.740 [http-nio-8088-exec-6] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:57) -os = Unknown
+19:43:01.740 [http-nio-8088-exec-6] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:59) -browser = BOT
+19:43:01.740 [http-nio-8088-exec-6] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:63) -127.0.0.1 调用/customer/login接口，RequestBody:{username=gift, password=qf123456}
+19:43:02.248 [http-nio-8088-exec-6] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:91) -登录成功了
+19:43:02.643 [http-nio-8088-exec-1] INFO  org.gift.Servlet.Photo.PhotoInterface.submit(PhotoInterface.java:35) -127.0.0.1 调用/photo/submit接口，RequestBody:{photoalbum_id=1, title=第2张相片, commit=第sab个相册的说明,这个相册被修改过了, index=1}
+19:43:03.039 [http-nio-8088-exec-1] INFO  org.gift.Utiliy.aspect.UploadFileServer.uploadeFile(UploadFileServer.java:30) ------>>>>>文件上传成功<<<<<-----
+19:43:56.425 [http-nio-8088-exec-2] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:55) -clientType = UNKNOWN
+19:43:56.425 [http-nio-8088-exec-2] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:57) -os = Unknown
+19:43:56.425 [http-nio-8088-exec-2] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:59) -browser = BOT
+19:43:56.425 [http-nio-8088-exec-2] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:63) -127.0.0.1 调用/customer/login接口，RequestBody:{username=gift, password=qf123456}
+19:43:56.766 [http-nio-8088-exec-2] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:91) -登录成功了
+19:43:57.316 [http-nio-8088-exec-7] WARN  org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver.logException(AbstractHandlerExceptionResolver.java:208) -Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content type 'multipart/form-data;boundary=7d255f921f388868ee9d17869391748b;charset=UTF-8' not supported]

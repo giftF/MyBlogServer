@@ -1,0 +1,24 @@
+19:42:00.049 [http-nio-8088-exec-1] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:55) -clientType = UNKNOWN
+19:42:00.057 [http-nio-8088-exec-1] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:57) -os = Unknown
+19:42:00.057 [http-nio-8088-exec-1] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:59) -browser = BOT
+19:42:00.057 [http-nio-8088-exec-1] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:63) -127.0.0.1 调用/customer/login接口，RequestBody:{username=gift, password=qf123456}
+19:42:00.057 [http-nio-8088-exec-1] INFO  com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:110) -HikariPool-1 - Starting...
+19:42:00.073 [http-nio-8088-exec-1] WARN  com.zaxxer.hikari.util.DriverDataSource.<init>(DriverDataSource.java:70) -Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+19:42:00.346 [http-nio-8088-exec-1] INFO  com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:123) -HikariPool-1 - Start completed.
+19:42:01.008 [http-nio-8088-exec-1] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:91) -登录成功了
+19:42:01.346 [http-nio-8088-exec-2] INFO  org.gift.Servlet.Photo.PhotoInterface.submit(PhotoInterface.java:35) -127.0.0.1 调用/photo/submit接口，RequestBody:{}
+19:42:01.346 [http-nio-8088-exec-2] ERROR org.gift.Servlet.Photo.PhotoInterface.submit(PhotoInterface.java:68) -java.lang.NumberFormatException: Cannot parse null string
+19:42:24.737 [http-nio-8088-exec-3] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:55) -clientType = UNKNOWN
+19:42:24.737 [http-nio-8088-exec-3] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:57) -os = Unknown
+19:42:24.737 [http-nio-8088-exec-3] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:59) -browser = BOT
+19:42:24.737 [http-nio-8088-exec-3] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:63) -127.0.0.1 调用/customer/login接口，RequestBody:{username=gift, password=qf123456}
+19:42:25.119 [http-nio-8088-exec-3] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:91) -登录成功了
+19:42:25.456 [http-nio-8088-exec-8] INFO  org.gift.Servlet.Photo.PhotoInterface.submit(PhotoInterface.java:35) -127.0.0.1 调用/photo/submit接口，RequestBody:{}
+19:42:25.457 [http-nio-8088-exec-8] ERROR org.gift.Servlet.Photo.PhotoInterface.submit(PhotoInterface.java:68) -java.lang.NumberFormatException: Cannot parse null string
+19:42:47.376 [http-nio-8088-exec-9] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:55) -clientType = UNKNOWN
+19:42:47.377 [http-nio-8088-exec-9] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:57) -os = Unknown
+19:42:47.377 [http-nio-8088-exec-9] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:59) -browser = BOT
+19:42:47.377 [http-nio-8088-exec-9] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:63) -127.0.0.1 调用/customer/login接口，RequestBody:{username=gift, password=qf123456}
+19:42:47.708 [http-nio-8088-exec-9] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:91) -登录成功了
+19:42:48.175 [http-nio-8088-exec-5] INFO  org.gift.Servlet.Photo.PhotoInterface.submit(PhotoInterface.java:35) -127.0.0.1 调用/photo/submit接口，RequestBody:{photoalbum_id=1, title=第2张相片, commit=第sab个相册的说明,这个相册被修改过了, index=2}
+19:42:48.581 [http-nio-8088-exec-5] INFO  org.gift.Utiliy.aspect.UploadFileServer.uploadeFile(UploadFileServer.java:30) ------>>>>>文件上传成功<<<<<-----

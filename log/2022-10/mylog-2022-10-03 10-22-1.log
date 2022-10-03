@@ -1,0 +1,41 @@
+10:22:17.510 [main] INFO  org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:55) -Starting Main using Java 17 on MS-FKJHQAVSLGRF with PID 17196 (D:\javaobjects\MyBlog\target\classes started by Administrator in D:\javaobjects\MyBlog)
+10:22:17.522 [main] INFO  org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:634) -No active profile set, falling back to 1 default profile: "default"
+10:22:18.033 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate.multipleStoresDetected(RepositoryConfigurationDelegate.java:262) -Multiple Spring Data modules found, entering strict repository configuration mode
+10:22:18.036 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:132) -Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+10:22:18.090 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:201) -Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+10:22:18.635 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:108) -Tomcat initialized with port(s): 8088 (http)
+10:22:18.643 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) -Initializing ProtocolHandler ["http-nio-8088"]
+10:22:18.644 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) -Starting service [Tomcat]
+10:22:18.644 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) -Starting Servlet engine: [Apache Tomcat/9.0.65]
+10:22:18.728 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) -Initializing Spring embedded WebApplicationContext
+10:22:18.728 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:292) -Root WebApplicationContext: initialization completed in 1168 ms
+10:22:19.527 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) -Starting ProtocolHandler ["http-nio-8088"]
+10:22:19.547 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:220) -Tomcat started on port(s): 8088 (http) with context path ''
+10:22:19.556 [main] INFO  org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:61) -Started Main in 2.424 seconds (JVM running for 2.955)
+10:22:23.241 [http-nio-8088-exec-1] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) -Initializing Spring DispatcherServlet 'dispatcherServlet'
+10:22:23.241 [http-nio-8088-exec-1] INFO  org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:525) -Initializing Servlet 'dispatcherServlet'
+10:22:23.242 [http-nio-8088-exec-1] INFO  org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:547) -Completed initialization in 1 ms
+10:22:23.316 [http-nio-8088-exec-1] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:55) -clientType = UNKNOWN
+10:22:23.317 [http-nio-8088-exec-1] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:57) -os = Unknown
+10:22:23.317 [http-nio-8088-exec-1] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:59) -browser = BOT
+10:22:23.317 [http-nio-8088-exec-1] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:63) -127.0.0.1 调用/customer/login接口，RequestBody:{username=gift, password=qf123456}
+10:22:23.330 [http-nio-8088-exec-1] INFO  com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:110) -HikariPool-1 - Starting...
+10:22:23.333 [http-nio-8088-exec-1] WARN  com.zaxxer.hikari.util.DriverDataSource.<init>(DriverDataSource.java:70) -Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+10:22:23.614 [http-nio-8088-exec-1] INFO  com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:123) -HikariPool-1 - Start completed.
+10:22:24.150 [http-nio-8088-exec-1] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:91) -登录成功了
+10:22:24.212 [http-nio-8088-exec-2] INFO  org.gift.Servlet.PhotoAlbum.PhotoAlbumInterface.getlist(PhotoAlbumInterface.java:29) -127.0.0.1 调用/photoalbum/submit接口，RequestBody:{id=2, title=第二个相册, commit=第sab个相册的说明，这个相册被修改过了, top=1}
+10:22:24.274 [http-nio-8088-exec-2] INFO  org.gift.Servlet.PhotoAlbum.PhotoAlbumInterface.getlist(PhotoAlbumInterface.java:45) -修改相册成功
+10:22:36.803 [http-nio-8088-exec-4] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:55) -clientType = UNKNOWN
+10:22:36.803 [http-nio-8088-exec-4] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:57) -os = Unknown
+10:22:36.803 [http-nio-8088-exec-4] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:59) -browser = BOT
+10:22:36.807 [http-nio-8088-exec-4] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:63) -127.0.0.1 调用/customer/login接口，RequestBody:{username=gift, password=qf123456}
+10:22:36.871 [http-nio-8088-exec-4] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:91) -登录成功了
+10:22:36.950 [http-nio-8088-exec-6] INFO  org.gift.Servlet.PhotoAlbum.PhotoAlbumInterface.getlist(PhotoAlbumInterface.java:29) -127.0.0.1 调用/photoalbum/submit接口，RequestBody:{id=2, title=第二个相册, commit=第sab个相册的说明,这个相册被修改过了, top=1}
+10:22:37.040 [http-nio-8088-exec-6] INFO  org.gift.Servlet.PhotoAlbum.PhotoAlbumInterface.getlist(PhotoAlbumInterface.java:45) -修改相册成功
+10:22:56.147 [http-nio-8088-exec-8] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:55) -clientType = UNKNOWN
+10:22:56.163 [http-nio-8088-exec-8] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:57) -os = Unknown
+10:22:56.163 [http-nio-8088-exec-8] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:59) -browser = BOT
+10:22:56.163 [http-nio-8088-exec-8] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:63) -127.0.0.1 调用/customer/login接口，RequestBody:{username=gift, password=qf123456}
+10:22:56.243 [http-nio-8088-exec-8] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:91) -登录成功了
+10:22:56.334 [http-nio-8088-exec-10] INFO  org.gift.Servlet.PhotoAlbum.PhotoAlbumInterface.getlist(PhotoAlbumInterface.java:29) -127.0.0.1 调用/photoalbum/submit接口，RequestBody:{id=2, title=第二个相册, commit=第sab个相册的说明,这个相册被修改过了, top=1}
+10:22:56.334 [http-nio-8088-exec-10] ERROR org.gift.Servlet.PhotoAlbum.PhotoAlbumInterface.getlist(PhotoAlbumInterface.java:51) -java.lang.ClassCastException: class java.lang.String cannot be cast to class java.lang.Integer (java.lang.String and java.lang.Integer are in module java.base of loader 'bootstrap')

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--namespace:命名空间，用来映射对应的mapper，相当于将mapper和mapper.xml连接起来-->
+<mapper namespace="org.gift.PersistantObject.mapper.UsersMapper">
+    <insert id="save" parameterType="org.gift.PersistantObject.entity.Users">
+        insert into Users
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="id!=null">id,</if>
+            <if test="username!=null">username,</if>
+            <if test="password!=null">password,</if>
+            <if test="p1!=null">p1,</if>
+            <if test="p2!=null">p2,</if>
+            <if test="p3!=null">p3,</if>
+            <if test="p4!=null">p4,</if>
+            <if test="p5!=null">p5,</if>
+            <if test="commit!=null">commit,</if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="id!=null">#{id},</if>
+            <if test="username!=null">#{username},</if>
+            <if test="password!=null">#{password},</if>
+            <if test="p1!=null">#{p1},</if>
+            <if test="p2!=null">#{p2},</if>
+            <if test="p3!=null">#{p3},</if>
+            <if test="p4!=null">#{p4},</if>
+            <if test="p5!=null">#{p5},</if>
+            <if test="commit!=null">#{commit},</if>
+        </trim>
+    </insert>
+
+    <select id="selectUserforPassword" resultType="java.lang.String">
+        SELECT
+            id
+        FROM
+            Users
+        WHERE
+            username = #{username}
+            AND PASSWORD = #{password}
+    </select>
+
+</mapper>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

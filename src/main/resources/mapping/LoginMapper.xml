@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--namespace:命名空间，用来映射对应的mapper，相当于将mapper和mapper.xml连接起来-->
+<mapper namespace="org.gift.PersistantObject.mapper.LoginMapper">
+    <insert id="save" parameterType="org.gift.PersistantObject.entity.Login">
+        insert into Login
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="users_id!=null">users_id,</if>
+            <if test="ip!=null">ip,</if>
+            <if test="equipment!=null">equipment,</if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="users_id!=null">#{users_id},</if>
+            <if test="ip!=null">#{ip},</if>
+            <if test="equipment!=null">#{equipment},</if>
+        </trim>
+    </insert>
+</mapper>

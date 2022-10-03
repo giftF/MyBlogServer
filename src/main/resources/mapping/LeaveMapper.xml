@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--namespace:命名空间，用来映射对应的mapper，相当于将mapper和mapper.xml连接起来-->
+<mapper namespace="org.gift.PersistantObject.mapper.LeaveMapper">
+    <insert id="add" parameterType="org.gift.PersistantObject.entity.Leave">
+        insert into `Leave`
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="msg!=null">msg,</if>
+            <if test="ip!=null">ip,</if>
+            <if test="status!=null">status,</if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="msg!=null">#{msg},</if>
+            <if test="ip!=null">#{ip},</if>
+            <if test="status!=null">#{status},</if>
+        </trim>
+    </insert>
+    <select id="statistics" resultType="org.gift.ValueObject.Message.ResStatistics">
+        SELECT COUNT(1) AS `count`,SUM(CASE WHEN `status`=0 THEN 1 ELSE 0 END) AS unread FROM `Leave`
+    </select>
+    <update id="read">
+        update `Leave` set `status` = 1
+        <trim>
+            <if test="id!=null">where `id`=#{id}</if>
+        </trim>
+    </update>
+    <select id="getList" resultType="org.gift.PersistantObject.entity.Leave">
+        SELECT t.id,t.msg,t.ip,t.updatedate,t.createdate,t.status FROM `Leave` AS t ORDER BY t.id DESC LIMIT #{page},#{rownum}
+    </select>
+</mapper>

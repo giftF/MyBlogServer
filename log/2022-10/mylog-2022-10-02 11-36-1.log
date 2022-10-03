@@ -1,0 +1,9 @@
+11:36:16.870 [http-nio-8088-exec-3] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:55) -clientType = UNKNOWN
+11:36:16.872 [http-nio-8088-exec-3] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:57) -os = Unknown
+11:36:16.872 [http-nio-8088-exec-3] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:59) -browser = BOT
+11:36:16.872 [http-nio-8088-exec-3] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:63) -127.0.0.1 调用/customer/login接口，RequestBody:{username=gift, password=qf123456}
+11:36:17.093 [http-nio-8088-exec-3] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:91) -登录成功了
+11:36:17.322 [http-nio-8088-exec-5] INFO  org.gift.Servlet.Blog.BlogInterface.submit(BlogInterface.java:45) -127.0.0.1 调用/customer/login接口，RequestBody:{id=1, title=这是第一条修改的blog, top=0, classify=1, keyword=test,test2, value=这是修改内容}
+11:36:17.323 [http-nio-8088-exec-5] INFO  org.gift.Utiliy.ManyUtil.LengthComparison(MoverUtil.java:5) -12
+11:36:17.323 [http-nio-8088-exec-5] INFO  org.gift.Utiliy.ManyUtil.LengthComparison(MoverUtil.java:5) -10
+11:36:17.626 [http-nio-8088-exec-5] INFO  org.gift.Servlet.Blog.BlogInterface.submit(BlogInterface.java:81) -修改成功

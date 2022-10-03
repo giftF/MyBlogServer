@@ -1,0 +1,12 @@
+15:06:03.257 [http-nio-8088-exec-1] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) -Initializing Spring DispatcherServlet 'dispatcherServlet'
+15:06:03.259 [http-nio-8088-exec-1] INFO  org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:525) -Initializing Servlet 'dispatcherServlet'
+15:06:03.260 [http-nio-8088-exec-1] INFO  org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:547) -Completed initialization in 1 ms
+15:06:03.311 [http-nio-8088-exec-1] INFO  org.gift.Servlet.Customer.LoginInterface.login(Login.java:47) -127.0.0.1 调用/customer/login接口，RequestBody:{username=gift, password=qf123456}
+15:06:03.326 [http-nio-8088-exec-1] INFO  com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:110) -HikariPool-1 - Starting...
+15:06:03.330 [http-nio-8088-exec-1] WARN  com.zaxxer.hikari.util.DriverDataSource.<init>(DriverDataSource.java:70) -Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+15:06:03.590 [http-nio-8088-exec-1] INFO  com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:123) -HikariPool-1 - Start completed.
+15:06:03.646 [http-nio-8088-exec-1] INFO  org.gift.Servlet.Customer.LoginInterface.login(Login.java:60) -登录成功了
+15:06:14.306 [http-nio-8088-exec-3] INFO  org.gift.Servlet.Customer.LoginInterface.login(Login.java:47) -127.0.0.1 调用/customer/login接口，RequestBody:{username=gift, password=qf1234561}
+15:06:14.313 [http-nio-8088-exec-3] INFO  org.gift.Servlet.Customer.LoginInterface.login(Login.java:66) -登录失败，将登录情况写入表中
+15:06:35.819 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource.close(HikariDataSource.java:350) -HikariPool-1 - Shutdown initiated...
+15:06:35.836 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource.close(HikariDataSource.java:352) -HikariPool-1 - Shutdown completed.

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--Configuration：为根节点，有status和monitorInterval等多个属性-->
+<!--status的值有 “trace”, “debug”, “info”, “warn”, “error” and “fatal”，用于控制log4j2日志框架本身的日志级别-->
+<!--monitorInterval，含义是每隔多少秒重新读取配置文件，可以不重启应用的情况下修改配置-->
+<Configuration status="WARN">
+    <!--properties:使用来定义常量，以便在其他配置的时候引用，该配置是可选的，例如定义日志的存放位置-->
+    <properties>
+        <!--日志存放目录，可根据自己的需要进行修改-->
+        <property name="LOG_HOME">log</property>
+        <!--日志文件名称-->
+        <property name="FILE_NAME">mylog</property>
+        <!--打印日志的级别-->
+        <property name="log.sql.level">info</property>
+    </properties>
+
+    <!--Appenders：输出源，用于定义日志输出的地方-->
+    <Appenders>
+        <!--Console：控制台输出源是将日志打印到控制台上，开发的时候一般都会配置，以便调试-->
+        <Console name="Console" target="SYSTEM_OUT">
+            <!--PatternLayout：控制台或文件输出源（Console、File、RollingRandomAccessFile）都必须包含一个PatternLayout节点，用于指定输出文件的格式-->
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %l -%msg%n" />
+        </Console>
+
+        <!--RollingRandomAccessFile: 该输出源也是写入到文件，不同的是比File更加强大，可以指定当文件达到一定大小-->
+        <!--fileName 指定当前日志文件的位置和文件名称-->
+        <!--filePattern 指定当发生Rolling时，文件的转移和重命名规则-->
+        <RollingRandomAccessFile name="RollingRandomAccessFile" fileName="${LOG_HOME}/${FILE_NAME}.log" filePattern="${LOG_HOME}/$${date:yyyy-MM}/${FILE_NAME}-%d{yyyy-MM-dd HH-mm}-%i.log">
+            <!--PatternLayout：控制台或文件输出源（Console、File、RollingRandomAccessFile）都必须包含一个PatternLayout节点，用于指定输出文件的格式-->
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %l -%msg%n" />
+            <Policies>
+                <!--TimeBasedTriggeringPolicy 这个配置需要和filePattern结合使用，注意filePattern中配置的文件重命名规则是${FILE_NAME}-%d{yyyy-MM-dd HH-mm}-%i，最小的时间粒度是mm，即分钟-->
+                <!--TimeBasedTriggeringPolicy 指定的size是1，结合起来就是每1分钟生成一个新文件。如果改成%d{yyyy-MM-dd HH}，最小粒度为小时，则每一个小时生成一个文件-->
+                <TimeBasedTriggeringPolicy interval="1" />
+                <!--SizeBasedTriggeringPolicy 指定当文件体积大于size指定的值时，触发Rolling-->
+                <SizeBasedTriggeringPolicy size="10 MB" />
+            </Policies>
+            <!--DefaultRolloverStrategy 指定最多保存的文件个数-->
+            <DefaultRolloverStrategy max="20"/>
+        </RollingRandomAccessFile>
+    </Appenders>
+
+    <!--Loggers：日志器分根日志器Root和自定义日志器，当根据日志名字获取不到指定的日志器时就使用Root作为默认的日志器，自定义时需要指定每个Logger的名称name（对于命名可以以包名作为日志的名字，不同的包配置不同的级别等），日志级别level，相加性additivity（是否继承下面配置的日志器）， 对于一般的日志器（如Console、File、RollingRandomAccessFile）一般需要配置一个或多个输出源AppenderRef-->
+    <Loggers>
+        <Root level="info">
+            <AppenderRef ref="Console" />
+            <AppenderRef ref="RollingRandomAccessFile" />
+        </Root>
+
+        <!--每个logger可以指定一个level（TRACE, DEBUG, INFO, WARN, ERROR, ALL or OFF），不指定时level默认为ERROR-->
+        <!--additivity指定是否同时输出log到父类的appender，缺省为true-->
+        <Logger name="com.mengdee.dao" level="${log.sql.level" additivity="false">
+            <AppenderRef ref="Console" />
+        </Logger>
+    </Loggers>
+</Configuration>
+
+
+
+
+
+
+
+
+
+

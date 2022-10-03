@@ -1,0 +1,7 @@
+11:32:40.254 [http-nio-8088-exec-2] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:55) -clientType = UNKNOWN
+11:32:40.254 [http-nio-8088-exec-2] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:57) -os = Unknown
+11:32:40.254 [http-nio-8088-exec-2] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:59) -browser = BOT
+11:32:40.254 [http-nio-8088-exec-2] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:63) -127.0.0.1 调用/customer/login接口，RequestBody:{username=gift, password=qf123456}
+11:32:40.346 [http-nio-8088-exec-2] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:91) -登录成功了
+11:32:40.475 [http-nio-8088-exec-4] INFO  org.gift.Servlet.Blog.BlogInterface.submit(BlogInterface.java:45) -127.0.0.1 调用/customer/login接口，RequestBody:{title=这是第一条blog, top=0, classify=1, keyword=test, value=这是测试内容}
+11:32:40.483 [http-nio-8088-exec-4] INFO  org.gift.Servlet.Blog.BlogInterface.submit(BlogInterface.java:53) -title长度不能超过50个字符

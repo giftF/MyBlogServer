@@ -1,0 +1,30 @@
+10:07:10.374 [http-nio-8088-exec-4] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:55) -clientType = UNKNOWN
+10:07:10.374 [http-nio-8088-exec-4] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:57) -os = Unknown
+10:07:10.374 [http-nio-8088-exec-4] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:59) -browser = BOT
+10:07:10.374 [http-nio-8088-exec-4] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:63) -127.0.0.1 调用/customer/login接口，RequestBody:{username=gift, password=qf123456}
+10:07:10.703 [http-nio-8088-exec-4] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:91) -登录成功了
+10:07:11.015 [http-nio-8088-exec-6] INFO  org.gift.Servlet.PhotoAlbum.PhotoAlbumInterface.getlist(PhotoAlbumInterface.java:29) -127.0.0.1 调用/photoalbum/submit接口，RequestBody:{title=第er个相册, commit=第er个相册的说明, top=0}
+10:07:11.488 [http-nio-8088-exec-6] INFO  org.gift.Servlet.PhotoAlbum.PhotoAlbumInterface.getlist(PhotoAlbumInterface.java:41) -新增相册成功
+10:07:21.163 [http-nio-8088-exec-8] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:55) -clientType = UNKNOWN
+10:07:21.163 [http-nio-8088-exec-8] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:57) -os = Unknown
+10:07:21.163 [http-nio-8088-exec-8] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:59) -browser = BOT
+10:07:21.164 [http-nio-8088-exec-8] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:63) -127.0.0.1 调用/customer/login接口，RequestBody:{username=gift, password=qf123456}
+10:07:21.504 [http-nio-8088-exec-8] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:91) -登录成功了
+10:07:22.143 [http-nio-8088-exec-10] INFO  org.gift.Servlet.PhotoAlbum.PhotoAlbumInterface.getlist(PhotoAlbumInterface.java:29) -127.0.0.1 调用/photoalbum/submit接口，RequestBody:{title=第san个相册, commit=第sab个相册的说明, top=1}
+10:07:23.033 [http-nio-8088-exec-10] INFO  org.gift.Servlet.PhotoAlbum.PhotoAlbumInterface.getlist(PhotoAlbumInterface.java:41) -新增相册成功
+10:07:48.203 [http-nio-8088-exec-2] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:55) -clientType = UNKNOWN
+10:07:48.203 [http-nio-8088-exec-2] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:57) -os = Unknown
+10:07:48.203 [http-nio-8088-exec-2] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:59) -browser = BOT
+10:07:48.203 [http-nio-8088-exec-2] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:63) -127.0.0.1 调用/customer/login接口，RequestBody:{username=gift, password=qf123456}
+10:07:48.556 [http-nio-8088-exec-2] INFO  org.gift.Servlet.Customer.LoginInterface.login(LoginInterface.java:91) -登录成功了
+10:07:48.901 [http-nio-8088-exec-4] INFO  org.gift.Servlet.PhotoAlbum.PhotoAlbumInterface.getlist(PhotoAlbumInterface.java:29) -127.0.0.1 调用/photoalbum/submit接口，RequestBody:{id=2, title=第二个相册, commit=第sab个相册的说明，这个相册被修改过了, top=1}
+10:07:48.947 [http-nio-8088-exec-4] ERROR org.gift.Servlet.PhotoAlbum.PhotoAlbumInterface.getlist(PhotoAlbumInterface.java:51) -org.springframework.jdbc.BadSqlGrammarException: 
+### Error updating database.  Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''第二个相册',
+            '第sab个相册的说明，这个相册被修改' at line 2
+### The error may involve org.gift.PersistantObject.mapper.PhotoAlbumMapper.update-Inline
+### The error occurred while setting parameters
+### SQL: update PhotoAlbum          set ?,             ?,             ?          where `id`=?
+### Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''第二个相册',
+            '第sab个相册的说明，这个相册被修改' at line 2
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''第二个相册',
+            '第sab个相册的说明，这个相册被修改' at line 2
