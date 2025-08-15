@@ -8,7 +8,7 @@ import java.util.Date;
 @Data
 public class Login implements Serializable {
     private int id;
-    private String users_id;
+    private Users user;
     private String ip;
     private String equipment;
     private Date createdate;

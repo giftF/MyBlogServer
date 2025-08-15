@@ -9,7 +9,7 @@ public class Users {
     private String username;
     private String password;
     private Date createdate;
-    private String p1;
+    private String photo;
     private String p2;
     private String p3;
     private String p4;

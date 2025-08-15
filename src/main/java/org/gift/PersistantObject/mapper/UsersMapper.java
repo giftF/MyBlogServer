@@ -10,5 +10,5 @@ public interface UsersMapper {
     // 保存方法
     int save(Users users);
 
-    String selectUserforPassword(@Param("username")String username, @Param("password")String password);
+    Users selectUserforPassword(@Param("username")String username, @Param("password")String password);
 }

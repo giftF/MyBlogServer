@@ -18,7 +18,7 @@
 
     <select id="SelectCount" resultType="java.lang.Integer">
         SELECT
-            SUM(t.status)
+            SUM(case when t.status = "1" then 0 else 1 end)
         FROM
         (SELECT
             STATUS

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--namespace:命名空间，用来映射对应的mapper，相当于将mapper和mapper.xml连接起来-->
+<mapper namespace="org.gift.PersistantObject.mapper.TasksMapper">
+    <insert id="save" parameterType="org.gift.PersistantObject.entity.Tasks">
+        insert into Tasks
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="user_id!=null">user_id,</if>
+            <if test="title!=null">title,</if>
+            <if test="deadline!=null">deadline,</if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="user_id!=null">#{user_id},</if>
+            <if test="title!=null">#{title},</if>
+            <if test="deadline!=null">#{deadline},</if>
+        </trim>
+    </insert>
+    <select id="getList" resultType="org.gift.PersistantObject.entity.Tasks">
+        <!--        SELECT * FROM Cards ORDER BY (correct + `error`), `error` / (correct + `error`) DESC LIMIT 20-->
+        <!--        SELECT * FROM Cards ORDER BY  (correct + `error`),((10 * continuous + correct) / (correct + `error`)) LIMIT 20-->
+        <!--        select * from Cards order by ((error + 0.5) / (correct + error + 1)) * continuous limit 15-->
+        SELECT * FROM tasks WHERE status == 'pending' ORDER BY deadline;
+    </select>
+
+    <update id="update">
+        update `Tasks` set
+        <if test="status!=null">status = #{status},</if>
+        <if test="progress!=null">progress = #{progress},</if>
+        where id = #{id}
+    </update>
+
+</mapper>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

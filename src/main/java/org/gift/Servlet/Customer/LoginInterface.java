@@ -3,6 +3,7 @@ package org.gift.Servlet.Customer;
 import eu.bitwalker.useragentutils.UserAgent;
 import org.gift.PersistantObject.entity.Login;
 import org.gift.PersistantObject.entity.LoginRecord;
+import org.gift.PersistantObject.entity.Users;
 import org.gift.PersistantObject.mapper.LoginMapper;
 import org.gift.PersistantObject.mapper.LoginRecordMapper;
 import org.gift.PersistantObject.mapper.UsersMapper;
@@ -49,7 +50,7 @@ public class LoginInterface extends HTTPRequest {
     * @RequestBody  获取json参数
     * */
     @RequestMapping(value="/login", method=RequestMethod.POST)
-    public String login(HttpServletRequest request, @RequestBody Map<String, Object> body) throws Exception {
+    public String login(HttpServletRequest request, @RequestBody HashMap<String, Object> body) throws Exception {
         UserAgent userAgent = UserAgent.parseUserAgentString(request.getHeader("user-agent"));
         String clientType = userAgent.getOperatingSystem().getDeviceType().toString();
         LogUtil.LOGGING.info("clientType = " + clientType);   //客户端类型  手机、电脑、平板
@@ -75,20 +76,22 @@ public class LoginInterface extends HTTPRequest {
             LoginRecord loginRecord = new LoginRecord();
             loginRecord.setIp(ip);
             loginRecord.setValue(body.toString());
-            String userID = usersMapper.selectUserforPassword(username, password);
-            if(null != userID){
+            Users user = usersMapper.selectUserforPassword(username, password);
+            if(null != user){
                 loginRecord.setStatus(1);
                 Login login = new Login();
                 login.setIp(ip);
-                login.setUsers_id(userID);
+                login.setUser(user);
                 login.setEquipment(browser);
-                loginMapper.save(login);
+                loginMapper.save(String.valueOf(login.getUser().getId()), login.getIp(), login.getEquipment());
                 Map<String, Object> info = new HashMap<>();
                 info.put("username", username);
                 info.put("password", password);
-                String token = JwtUtil.sign(userID, info);
+                String token = JwtUtil.sign(String.valueOf(user.getId()), info);
                 redisCacheService.add(token, "1", 5 * 60, TimeUnit.SECONDS);
                 LogUtil.LOGGING.info("登录成功了");
+                res.setPhoto(user.getPhoto());
+                res.setUsername(user.getUsername());
                 res.setMsg("登录成功");
                 res.setStatus(1);
                 res.setToken(token);
@@ -121,6 +124,6 @@ public class LoginInterface extends HTTPRequest {
         * 连续5次失败返回true 否则返回false
         * */
         Integer num = loginRecordMapper.SelectCount(ip);
-        return num == 0;
+        return num != null && num == 5;
     }
 }

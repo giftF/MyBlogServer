@@ -37,4 +37,11 @@
     <select id="selectByID" resultType="org.gift.PersistantObject.entity.Photo">
         select `id`,`PhotoAlbum_id`,`index` from Photo where `id`=#{id}
     </select>
+    <select id="getList" resultType="org.gift.ValueObject.Photo.Catalogue">
+        select `id`,`title`,`url`,`commit` from `Photo` where `PhotoAlbum_id`=#{id} and `status`=1 order by `index`
+        <trim prefix="LIMIT" suffixOverrides=",">
+            <if test="page!=null">#{page},</if>
+            <if test="rowcount!=null">#{rowcount},</if>
+        </trim>
+    </select>
 </mapper>

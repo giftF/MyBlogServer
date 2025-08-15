@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--namespace:命名空间，用来映射对应的mapper，相当于将mapper和mapper.xml连接起来-->
+<mapper namespace="org.gift.PersistantObject.mapper.CardMapper">
+    <insert id="save" parameterType="org.gift.PersistantObject.entity.Card">
+        insert into Cards
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="id!=null">id,</if>
+            <if test="dc!=null">dc,</if>
+            <if test="zy!=null">zy,</if>
+            <if test="fy!=null">fy,</if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="id!=null">#{id},</if>
+            <if test="dc!=null">#{dc},</if>
+            <if test="zy!=null">#{zy},</if>
+            <if test="fy!=null">#{fy},</if>
+        </trim>
+    </insert>
+    <select id="getList" resultType="org.gift.PersistantObject.entity.Card">
+<!--        SELECT * FROM Cards ORDER BY (correct + `error`), `error` / (correct + `error`) DESC LIMIT 20-->
+<!--        SELECT * FROM Cards ORDER BY  (correct + `error`),((10 * continuous + correct) / (correct + `error`)) LIMIT 20-->
+<!--        select * from Cards order by ((error + 0.5) / (correct + error + 1)) * continuous limit 15-->
+        SELECT * FROM Cards ORDER BY ((correct+0.1) / (ERROR + correct+1)) * continuous LIMIT 15
+    </select>
+
+    <update id="update">
+        update `Cards` set
+        <if test="correct!=null">correct = correct + #{correct},</if>
+        <if test="error!=null">error = error + #{error},</if>
+        <if test="error==0">continuous = continuous + 10</if>
+        <if test="error!=0">continuous = (CASE WHEN continuous > 3 THEN (continuous - 3) ELSE 0 END)</if>
+        where id = #{id}
+    </update>
+
+</mapper>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

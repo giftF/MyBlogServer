@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--namespace:命名空间，用来映射对应的mapper，相当于将mapper和mapper.xml连接起来-->
+<mapper namespace="org.gift.PersistantObject.mapper.PlansMapper">
+    <insert id="save" parameterType="org.gift.PersistantObject.entity.Plans">
+        insert into Plans (message) values (#{message})
+    </insert>
+    <update id="updatePlan" parameterType="org.gift.PersistantObject.entity.Plans">
+        update Plans set tp = #{tp} where id = #{id}
+    </update>
+    <select id="selectAllPlans" resultType="org.gift.PersistantObject.entity.Plans">
+        SELECT id,message,tp,createdate,updatedate FROM Plans
+    </select>
+</mapper>

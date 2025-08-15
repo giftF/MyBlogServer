@@ -28,9 +28,9 @@
         </trim>
     </insert>
 
-    <select id="selectUserforPassword" resultType="java.lang.String">
+    <select id="selectUserforPassword" resultType="org.gift.PersistantObject.entity.Users">
         SELECT
-            id
+            id,username,photo
         FROM
             Users
         WHERE
